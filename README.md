@@ -249,3 +249,46 @@ El desarrollo de este ejercicio permite comprender cómo se aplican los árboles
 
 La implementación con Python, NetworkX y Matplotlib permite construir y visualizar el proceso, relacionando los conceptos teóricos de estructuras de datos con una situación práctica del ámbito financiero.
 
+# Recorrido adecuado para el árbol de decisión de crédito
+
+## Recorrido elegido: preorden
+
+El recorrido **preorden** es el más adecuado para representar la evaluación de una solicitud de crédito. En este recorrido se procesa primero el nodo actual y luego sus hijos. Aplicado al árbol, significa comenzar por la pregunta inicial y continuar según las respuestas hasta llegar a una decisión final.
+
+## Justificación
+
+### Orden de procesamiento
+
+La evaluación comienza en el nodo 1: «¿Los ingresos son mayores a $3.000 USD?». Después de responder, se continúa por la rama correspondiente:
+
+- Si la respuesta es **Sí**, se evalúa el nodo 2.
+- Si la respuesta es **No**, se evalúa el nodo 3.
+
+El mismo procedimiento se repite en cada pregunta hasta alcanzar un nodo de aprobación o rechazo. El preorden representa este procesamiento secuencial: primero se considera la pregunta actual y, a continuación, se avanza al siguiente nodo del recorrido.
+
+### Necesidad del problema
+
+El objetivo es evaluar cada solicitud de forma progresiva para tomar una decisión de crédito. No es necesario revisar todas las preguntas del árbol: la respuesta a una pregunta determina qué condición debe evaluarse después.
+
+El preorden refleja esta necesidad porque permite iniciar en la raíz del árbol y seguir el camino que corresponde a las respuestas del solicitante, hasta obtener el resultado aplicable.
+
+### Flujo de información
+
+La información fluye desde la pregunta inicial hacia las preguntas posteriores y, finalmente, hacia una decisión. Cada respuesta determina el siguiente paso:
+
+1. Se formula una pregunta.
+2. Se recibe una respuesta afirmativa o negativa.
+3. Se sigue la conexión correspondiente.
+4. Se continúa hasta llegar a una decisión final.
+
+Por ejemplo, si los ingresos superan los $3.000 USD, hay buen historial crediticio y la antigüedad laboral es mayor a dos años, el recorrido sería:
+
+**Nodo 1 → Nodo 2 → Nodo 4 → Nodo 8**
+
+El resultado sería «Aprobado por monto máximo». Este camino muestra cómo la información guía la evaluación desde la raíz hasta una hoja del árbol.
+
+## Comparación con otros recorridos
+
+- **Inorden:** procesa primero el subárbol izquierdo, luego el nodo y después el subárbol derecho. Este orden no representa de manera natural la evaluación, porque las preguntas posteriores dependen de las respuestas a las preguntas anteriores.
+- **Postorden:** procesa primero los descendientes y después el nodo actual. No resulta apropiado para este caso, ya que se debe conocer la respuesta a una pregunta antes de decidir qué condición evaluar a continuación.
+- **Preorden:** procesa primero el nodo actual y luego avanza por la rama correspondiente. Por ello, se ajusta al flujo de evaluación de una solicitud.
