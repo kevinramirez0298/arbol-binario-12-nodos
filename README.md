@@ -5,7 +5,7 @@
 **Universidad:** Uniremington
 **Asignatura:** Estructuras de Datos
 **Tema:** Árboles
-**Estudiante:** Kevin Ramirez
+**Estudiantes:** Kevin Ramirez, jonathan ballesteros, eustorgio chirimia
 
 ---
 
