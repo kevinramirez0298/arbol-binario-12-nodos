@@ -1,0 +1,66 @@
+============================================================
+ESTRUCTURAS DE DATOS
+ÁRBOLES (GRAFOS ESPECIALES)
+PREGUNTAS DE ANÁLISIS (CUARTO PUNTO)
+=====================
+
+Asignatura: Estructuras de Datos
+Estudiante: Jonathan Ballesteros- Eustorgio Chirimia- Kevin Ramirez
+Programa: Ingeniería de Sistemas
+Semestre: Tercero
+
+---
+
+1. ¿POR QUÉ UN ÁRBOL ES UN GRAFO ACÍCLICO?
+
+---
+
+Un árbol es un grafo acíclico porque sus nodos están conectados sin formar
+ciclos, es decir, no existe un recorrido que permita regresar al mismo nodo
+siguiendo un camino cerrado. Además, un árbol es conectado, por lo que existe un
+camino entre cualquiera de sus nodos.
+
+---
+
+2. ¿QUÉ PASARÍA SI SE AGREGA UNA ARISTA ADICIONAL
+   AL ÁRBOL?
+
+---
+
+Si se agrega una arista entre dos nodos que ya están conectados por un camino,
+se forma un ciclo y el árbol deja de cumplir sus propiedades. Por ejemplo, si
+dos nodos tienen una conexión indirecta y agregamos otra conexión directa entre
+ellos, se crea un recorrido cerrado.
+
+---
+
+3. ¿TODOS LOS GRAFOS ACÍCLICOS SON ÁRBOLES?
+   JUSTIFIQUE.
+
+---
+
+No, porque un grafo acíclico no necesariamente está conectado. Para que un grafo
+sea un árbol, debe ser conectado y no tener ciclos. Por ejemplo, si tenemos dos
+grupos de nodos separados, sin ciclos, tenemos un grafo acíclico, pero no un
+árbol. A un grafo de este tipo se le conoce como bosque si todos sus componentes
+son árboles.
+
+---
+
+4. ¿QUÉ VENTAJAS TIENE USAR ÁRBOLES FRENTE A
+   OTRAS ESTRUCTURAS DE DATOS?
+
+---
+
+Los árboles permiten organizar la información de forma jerárquica, facilitando
+su comprensión y manejo. Además, ciertos tipos de árboles, como los árboles
+binarios de búsqueda balanceados, permiten buscar, insertar y eliminar datos de
+manera eficiente. También son útiles para representar carpetas, bases de datos y
+procesos de toma de decisiones. Sin embargo, sus ventajas dependen del tipo de
+árbol y de cómo esté organizado.
+
+
+un árbol es un grafo conectado y sin ciclos.
+============================================================
+FIN DEL DOCUMENTO
+=================
