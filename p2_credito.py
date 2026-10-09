@@ -1,6 +1,6 @@
 # ==============================================================================
 # PARTE 2 CASO DE VIDA REAL
-# BUSCAR PELICULAS
+# BUSCAR CREDITO
 # ==============================================================================
 import matplotlib.pyplot as plt
 import networkx as nx
